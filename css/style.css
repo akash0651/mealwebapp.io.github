@@ -1,0 +1,134 @@
+html {
+    height: 100vh;
+    font-size: 12px;
+    /* Set the height of the HTML element to full viewport height and font size to 12px. */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Reset margin and padding for the body element. */
+}
+
+#header .lead {
+    font-size: 2rem;
+    /* Set the font size for the lead class within the header element. */
+}
+
+#food-inp {
+    width: 700px!important;
+    margin: 50px 0px;
+    /* Set the width and margins for the food-inp element. */
+}
+
+.container {
+    width: 80%;
+    max-width: 2000px!important;
+    /* Set the width and maximum width for the container element. */
+}
+
+.food-card {
+    background-size: cover!important;
+    border-radius: 5px;
+    height: 300px;
+    margin-bottom: 20px;
+    /* Set styles for the food-card element. */
+}
+
+.food-card-details {
+    display: none;
+    /* Hide the food-card-details element by default. */
+}
+
+.food-card:hover {
+    cursor: pointer;
+    /* Set the cursor to a pointer when hovering over the food-card element. */
+}
+
+#dish-area {
+    padding: 0px;
+    box-shadow: 2px 10px 20px rgba(0,0,0,0.5);
+    margin-top: 100px!important;
+    /* Set styles for the dish-area element. */
+}
+
+#recipe-header {
+    height: 500px;
+    background-size: cover!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    /* Set styles for the recipe-header element. */
+}
+
+#recipe {
+    padding: 50px;
+    /* Set padding for the recipe element. */
+}
+
+#recipe .display-2 {
+    margin-bottom: 80px!important;
+    /* Set the margin bottom for the display-2 class within the recipe element. */
+}
+
+.ingredient-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    /* Set styles for the ingredient-list element. */
+}
+
+#dish-img {
+    height: 300px;
+    margin-top: -160px;
+    margin-bottom: 50px;
+    transition: all 0.2s ease-in;
+    /* Set styles for the dish-img element. */
+}
+
+.ingredient {
+    padding: 15px;
+    width: 100%;
+    /* Set styles for the ingredient class. */
+}
+
+.ingredient:nth-of-type(2n+1) {
+    background-color: #f5f5f5;
+    /* Set background color for odd numbered ingredients. */
+}
+
+.amount {
+    float: right;
+    /* Float the amount to the right within the ingredient element. */
+}
+
+#steps .lead {
+    font-size: 1.4rem;
+    /* Set the font size for the lead class within the steps element. */
+}
+
+@media (max-width: 1600px) {
+    .ingredient-list {
+        margin-bottom: 40px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0px;
+    }
+    /* Set styles for media query with a maximum width of 1600px. */
+}
+
+@media (max-width : 900px) {
+    #recipe {
+        padding: 50px 0px;
+    }
+
+    .display-2 {
+        font-size: 4rem;
+    }
+}

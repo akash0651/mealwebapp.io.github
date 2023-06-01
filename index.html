@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealFinder | Find the perfect meal for you</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<!-- The above code includes the necessary metadata and imports the Bootstrap CSS library. -->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!-- The above code imports the Font Awesome CSS library. -->
+
+<link rel="stylesheet" href="css/style.css">
+<!-- The above code imports a custom CSS file called "style.css". -->
+
+<body style="background-color: cyan;">
+    <!-- Sets the background color of the body to cyan. -->
+
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="color: white;">Meal Finder</a>
+            <!-- Displays the logo and name of the website. -->
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <!-- Displays a search form in the navbar. -->
+
+        </div>
+    </nav>
+
+    <div id="header">
+        <h1 class="display-1 text-center" style="color:red"><b>Meal Finder</b></h1>
+        <!-- Displays the heading "Meal Finder" in red color. -->
+
+        <hr>
+        <!-- Displays a horizontal line. -->
+
+        <p class="lead text-center">Find The Meal and that details</p>
+        <!-- Displays a lead paragraph with the description of the website. -->
+    </div>
+
+    <div class="input-group input-group-lg">
+        <input style="margin-left: 30%; margin-right: 30%;" type="text" id="food-inp" class="form-control"
+            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"
+            placeholder="Search Your Favorate Dished">
+        <!-- Displays an input field for searching favorite dishes. -->
+
+        <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+        <!-- Displays a font icon for a magnifying glass. -->
+    </div>
+
+    <div class="container">
+        <div id="card-list" class="row"></div>
+        <!-- Creates a container for displaying a list of cards. -->
+
+        <div id="dish-area" class="my-5"></div>
+        <!-- Creates a container for displaying the details of a selected dish. -->
+    </div>
+
+    <script src="js/main.js"></script>
+    <!-- Imports the JavaScript file "main.js" for dynamic functionality. -->
+</body>
+
+</html>
